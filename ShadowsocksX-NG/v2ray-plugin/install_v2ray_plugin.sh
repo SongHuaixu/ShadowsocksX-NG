@@ -7,7 +7,7 @@
 #  Copyright © 2019 qiuyuzhou. All rights reserved.
 # https://github.com/shadowsocks/v2ray-plugin/
 
-VERSION="1.1.0"
+VERSION="1.2.0"
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
@@ -15,5 +15,6 @@ mkdir -p "$HOME/Library/Application Support/ShadowsocksX-NG/v2ray-plugin_$VERSIO
 cp -f v2ray-plugin "$HOME/Library/Application Support/ShadowsocksX-NG/v2ray-plugin_$VERSION/"
 
 ln -sfh "$HOME/Library/Application Support/ShadowsocksX-NG/v2ray-plugin_$VERSION/v2ray-plugin" "$HOME/Library/Application Support/ShadowsocksX-NG/plugins/v2ray-plugin"
+ln -sfh "$HOME/Library/Application Support/ShadowsocksX-NG/v2ray-plugin_$VERSION/v2ray-plugin" "$HOME/Library/Application Support/ShadowsocksX-NG/plugins/v2ray"
 
 echo "install v2ray-plugin done"
